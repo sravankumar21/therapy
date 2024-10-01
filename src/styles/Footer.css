@@ -1,0 +1,38 @@
+/* src/styles/Footer.css */
+
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #ffffff; /* White text for visibility */
+    padding: 10px 0;
+    text-align: center; /* Center text */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between; /* Space between links and socials */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding for smaller screens */
+  }
+  
+  
+  .footer-bottom {
+    margin-top: 10px; /* Space above copyright text */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .footer-links {
+      margin-bottom: 0px; /* Space below links */
+    }
+  
+    .footer-links a {
+      margin: 5px 0; /* Margin for stacked links */
+    }
+  }
+  
