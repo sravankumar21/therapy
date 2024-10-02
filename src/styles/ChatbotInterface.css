@@ -1,90 +1,116 @@
 /* src/styles/ChatbotInterface.css */
 
 .chatbot-container {
-    height: 100vh;
-    background-color: #f5f5f5;
-  }
-  
-  .chat-history {
-    background-color: #ffffff;
-    border-right: 1px solid #ddd;
-    overflow-y: auto;
-  }
-  
-  .history-list {
-    max-height: 80vh;
-    overflow-y: scroll;
-  }
-  
-  .chat-interface {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .chat-header {
-    background-color: #4595eb;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .chat-box {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #ffffff;
-  }
-  
-  .chat-conversation {
-    flex-grow: 1;
-    overflow-y: auto;
-  }
-  
-  .message {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
-  .message.user {
-    background-color: #007bff;
-    color: #fff;
-    align-self: flex-start;
-  }
-  
-  .message.bot {
-    background-color: #e0e0e0;
-    color: #000;
-    align-self: flex-end;
-  }
-  
-  .input-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .form-control {
-    flex-grow: 1;
-    margin-right: 10px;
-  }
-  
-  .send-btn, .mic-btn {
-    background-color: #4595eb;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 10%;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .send-btn:hover, .mic-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .btn-primary {
-    width: 100%;
-  }
-  
+  height: 100vh;
+  display: flex; /* Flexbox layout for main container */
+  background-color: #f5f5f5;
+  flex-direction: column; /* Allow vertical stacking */
+}
+
+.chat-header {
+  background-color: #4595eb;
+  color: #fff;
+  padding: 10px;
+  text-align: center; /* Center the header text */
+}
+
+.chat-layout {
+  display: flex; /* Flex layout for chat history and chat box */
+  flex-grow: 1; /* Allow this section to grow and fill available space */
+}
+
+.chat-history {
+  width: 30%; /* Width for chat history */
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  overflow-y: auto; /* Allow scrolling */
+  padding: 10px; /* Add some padding */
+}
+
+.history-list {
+  max-height: 80vh; /* Limit height for scrolling */
+  overflow-y: auto; /* Allow scrolling for the history list */
+}
+
+.chat-box {
+  flex-grow: 1; /* Allow chat box to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px; /* Added padding */
+}
+
+.chat-conversation {
+  flex-grow: 1;
+  overflow-y: auto; /* Allow scrolling for conversation */
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message.user {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-start; /* Align user messages to the start */
+}
+
+.message.bot {
+  background-color: #e0e0e0;
+  color: #000;
+  align-self: flex-end; /* Align bot messages to the end */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Space above input */
+}
+
+.form-control {
+  flex-grow: 1; /* Text input takes up available space */
+  margin-right: 10px; /* Space between input and buttons */
+}
+
+.send-btn,
+.mic-btn {
+  background-color: #4595eb;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.send-btn:hover,
+.mic-btn:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+.btn-primary {
+  width: auto; /* Keep button size to content */
+  padding: 5px 10px; /* Padding for the complete chat button */
+  margin-top: 5px; /* Margin above the button */
+  align-self: center; /* Center the complete chat button */
+  color: #0056b3;
+}
+
+/* New styles for video section */
+.video-section {
+  width: 100%; /* Full width of the chat box */
+  height: 200px; /* Set a height for the video */
+  display: flex;
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
+  overflow: hidden; /* Hide overflow */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+  /* Add any additional styles here for the video if needed */
+}

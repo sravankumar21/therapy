@@ -1,0 +1,53 @@
+.affirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 600px; /* Increased max width */
+    min-height: 300px; /* Increased minimum height for better appearance */
+    margin: auto; /* Center the container */
+    margin-top: 12rem;
+}
+
+.affirmation-container h3 {
+    margin: 0;
+    font-size: 28px; /* Increased font size for emphasis */
+    color: #4a90e2; /* A soothing blue color */
+    font-family: 'Arial', sans-serif; /* Modern font family */
+}
+
+.affirmation-container h1 {
+    font-size: 32px; /* Increased font size for the affirmation text */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #333333; /* Darker color for contrast */
+    margin: 20px 0; /* Added margin for spacing */
+}
+
+.affirmation-container p {
+    font-size: 18px;
+    color: #555555;
+    margin-top: 15px; /* Increased top margin for better spacing */
+    line-height: 1.5; /* Improved readability with line height */
+}
+
+.new-affirmation-button {
+    padding: 10px 20px; /* Increased padding for button */
+    background-color: #4a90e2; /* Button color */
+    color: #ffffff; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor for buttons */
+    font-size: 18px; /* Font size for button text */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.new-affirmation-button:hover {
+    background-color: #357ab8; /* Darker shade for hover effect */
+}

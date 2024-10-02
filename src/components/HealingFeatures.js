@@ -13,8 +13,8 @@ const HealingFeatures = () => {
     const features = [
         { name: "Companion", image: featureImage1, path: "/companion" },
         { name: "Games", image: featureImage2, path: "/games" },
-        { name: "Wellness Plan", image: featureImage3, path: "/wellness-plan" },
-        { name: "Therapist Guidance", image: featureImage4, path: "/therapist-guidance" }
+        { name: "Affirmation", image: featureImage3, path: "/affirmation" },
+        { name: "Therapist Guidance", image: featureImage4, path: "/therapist-guidance" } 
     ];
 
     const handleFeatureClick = (path) => {
