@@ -1,0 +1,102 @@
+
+  
+  .diabetic-model-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    gap: 20px;
+  }
+  
+  .animation-container {
+    margin-top: 200px;
+    margin-right: 60px;
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .animation-container .dotlottie-player {
+    width: 200px;
+    height: 240px;
+  }
+  
+  .form-container {
+    flex: 1;
+    margin-top: 30px;
+    margin-left: -20px;
+    width: 60%;
+    max-width: 500px;
+    background-color: #dcdaf7;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .form-container:hover {
+    background-color: #9d96ed;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-heading {
+    font-size: 2rem;
+    color: #4b0082;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Caveat', cursive;
+  }
+  
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  .form-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-field input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .predict-button {
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px auto;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .predict-button:hover {
+    background-color: #6a0dad;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result {
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #4b0082;
+  }
+  

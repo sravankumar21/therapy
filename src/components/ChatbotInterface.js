@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/ChatbotInterface.css'; // Ensure you have the corresponding CSS file
-import { FaMicrophone, FaPaperPlane } from 'react-icons/fa';
-import video1 from '../videos/video.mp4';
+import { FaMicrophone, FaPaperPlane, FaStop } from 'react-icons/fa';
+import video1 from '../videos/video2.mp4';
 
 const ChatbotInterface = () => {
   const [messages, setMessages] = useState([]); // Holds chat messages
   const [input, setInput] = useState('');       // Holds current user input
   const [isLoading, setIsLoading] = useState(false); // Loading state for bot response
   const [recognition, setRecognition] = useState(null); // Holds the SpeechRecognition instance
+  const [speaking, setSpeaking] = useState(false); // Track if bot is speaking
 
   const startSpeechRecognition = () => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -51,10 +52,20 @@ const ChatbotInterface = () => {
   const speakResponse = (text) => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US'; // You can set the language here
+    utterance.onstart = () => setSpeaking(true); // Set speaking to true
+    utterance.onend = () => setSpeaking(false); // Set speaking to false
+
     if ('speechSynthesis' in window) {
       window.speechSynthesis.speak(utterance);
     } else {
       console.error('Text-to-Speech is not supported in this browser.');
+    }
+  };
+
+  const stopSpeaking = () => {
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel(); // Stop ongoing speech
+      setSpeaking(false); // Update the speaking state
     }
   };
 
@@ -154,7 +165,7 @@ const ChatbotInterface = () => {
 
         <div className="chat-box">
           <div className="video-section">
-            <video autoPlay muted>
+            <video autoPlay muted loop>
               <source src={video1} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -183,6 +194,9 @@ const ChatbotInterface = () => {
             </button>
             <button className="mic-btn" onClick={startSpeechRecognition}>
               <FaMicrophone />
+            </button>
+            <button className="stop-btn" onClick={stopSpeaking} disabled={!speaking}>
+              <FaStop />
             </button>
           </div>
 

@@ -7,37 +7,37 @@ import GamingFeatureImage4 from '../images/ai-robot-wallpaper-24-1.jpg';
 import '../styles/Gamification.css';
 
 const Gamification = () => {
-    // Array of card data tailored for mental fitness games
+    // Array of card data tailored for healthcare-improving games
     const cards = [
         {
-            title: 'Mindfulness Meditation',
-            description: 'Engage in guided meditation sessions to boost your mental clarity and reduce stress.',
+            title: 'Healthy Eating Challenge',
+            description: 'Play games to learn about balanced diets and improve your nutrition knowledge.',
             image: GamingFeatureImage1,
-            route: '/mindfulness-meditation',
+            route: '/healthy-eating-challenge',
         },
         {
-            title: 'Stress Releaving - Puzzles',
-            description: 'Solve puzzles designed to help you unwind and refocus your mind.',
+            title: 'Fitness Fun Activities',
+            description: 'Join interactive exercises and games to stay active and improve physical health.',
             image: GamingFeatureImage2,
-            route: '/stress-relief-puzzles',
+            route: '/fitness-fun',
         },
         {
-            title: 'Brain Training Challenges',
-            description: 'Sharpen your cognitive skills with fun brain games and exercises.',
+            title: 'Hydration Tracker Game',
+            description: 'Track your water intake and play hydration-focused challenges.',
             image: GamingFeatureImage3,
-            route: '/brain-training',
+            route: '/hydration-tracker',
         },
         {
-            title: 'Positive Affirmations Quiz',
-            description: 'Learn and practice positive affirmations to enhance your mental wellbeing.',
+            title: 'Sleep Hygiene Quiz',
+            description: 'Learn tips for better sleep through engaging quizzes and activities.',
             image: GamingFeatureImage4,
-            route: '/positive-affirmations-quiz',
+            route: '/sleep-hygiene-quiz',
         },
     ];
 
     return (
         <div className="gamification-container">
-            <h1>Mental Fitness Games</h1>
+            <h1>Healthcare-Improving Games</h1>
             <div className="card-container">
                 {cards.map((card, index) => (
                     <div className="card" key={index}>

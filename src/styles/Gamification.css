@@ -8,8 +8,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between cards */
-    margin: 10px 0;
+    gap: 30px; /* Space between cards */
+    margin: 45px 0;
 }
 
 .card {

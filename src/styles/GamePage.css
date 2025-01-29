@@ -1,0 +1,32 @@
+.game-page-container {
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.game-page-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.game-page-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+.start-game-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-game-button:hover {
+    background-color: #16a085;
+}

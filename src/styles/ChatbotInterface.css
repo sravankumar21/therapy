@@ -8,7 +8,7 @@
 }
 
 .chat-header {
-  background-color: #4595eb;
+  background-color: #005bbb;
   color: #fff;
   padding: 10px;
   text-align: center; /* Center the header text */
@@ -20,7 +20,7 @@
 }
 
 .chat-history {
-  width: 30%; /* Width for chat history */
+  width: 20%; /* Width for chat history */
   background-color: #ffffff;
   border-right: 1px solid #ddd;
   overflow-y: auto; /* Allow scrolling */
@@ -53,7 +53,7 @@
 }
 
 .message.user {
-  background-color: #007bff;
+  background-color: #005bbb;
   color: #fff;
   align-self: flex-start; /* Align user messages to the start */
 }
@@ -102,7 +102,7 @@
 /* New styles for video section */
 .video-section {
   width: 100%; /* Full width of the chat box */
-  height: 200px; /* Set a height for the video */
+  height: 150px; /* Set a height for the video */
   display: flex;
   justify-content: center; /* Center the video horizontally */
   align-items: center; /* Center the video vertically */
@@ -110,7 +110,20 @@
 }
 
 video {
-  width: 100%; /* Make the video responsive */
-  height: auto; /* Maintain aspect ratio */
-  /* Add any additional styles here for the video if needed */
+  width: 40%; /* Make the video responsive */
+  height: 550%; /* Maintain aspect ratio */
+}
+
+/* Add a stop button */
+.stop-btn {
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stop-btn:hover {
+  background-color: #d11a1a; /* Darker red for hover */
 }

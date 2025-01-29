@@ -1,0 +1,112 @@
+/* General Wrapper */
+.heart-model-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    background-color: #f8d7da; /* Light red background for the wrapper */
+    min-height: 100vh; /* Ensure the page always takes at least full viewport height */
+    height: 100vh; /* Fix the height to the viewport height */
+    overflow: hidden; /* Prevent any overflow beyond the fixed height */
+}
+
+/* Animation Section */
+.heart-animation-section {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.heart-animation-section .dotlottie-player {
+    width: 80px;
+    height: 80px;
+}
+
+/* Form Section */
+.heart-form-section {
+    margin-top: 5px;
+    width: 80%;
+    max-width: 700px;
+    background-color: #ffe5e5; /* Light pinkish-red background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2); /* Red shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Prevent form from overflowing */
+}
+
+.heart-form-section:hover {
+    background-color: #ffcccc; /* Darker pinkish-red on hover */
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.4); /* Brighter red shadow on hover */
+}
+
+/* Form Title */
+.heart-form-title {
+    font-size: 2rem;
+    color: #c82333; /* Vibrant red for the title */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+/* Form Grid */
+.heart-form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.heart-form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.heart-form-field label {
+    margin-bottom: 5px;
+    color: #721c24; /* Deep red for labels */
+}
+
+.heart-form-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #f5c6cb; /* Soft red border */
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: #fff5f5; /* Very light red background */
+}
+
+/* Submit Button */
+.heart-predict-button {
+    grid-column: 1 / -1; /* Full-width button across all columns */
+    background-color: #c82333; /* Vibrant red button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heart-predict-button:hover {
+    background-color: #dc3545; /* Slightly brighter red on hover */
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3); /* Bright red shadow */
+}
+
+/* Result Box */
+.heart-result-box {
+    margin-top: 10px;
+    background-color: #fff5f5; /* Very light red */
+    padding: 15px;
+    border: 1px solid #f5c6cb; /* Soft red border */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1); /* Red-tinted shadow */
+    text-align: center;
+    color: #c82333; /* Vibrant red text for result */
+}

@@ -14,15 +14,16 @@
 }
 
 .features-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates a 2x2 grid */
+    gap: 20px; /* Adds space between the cards */
     justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .feature-item {
-    width: 250px;
-    height: 200px;
-    margin: 0 30px 20px 20px;
+    width: 100%; /* Ensure the cards fill their grid cells */
+    height: 250px; /* Adjust the height of the card to make it look more balanced */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,13 +32,19 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    overflow: hidden; /* Prevent content from spilling out */
+}
+
+.square-image-container {
+    width: 80%; /* Ensures the container of the image takes full width */
+    height: 60%; /* Limits the height of the image container */
 }
 
 .feature-image {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    width: 100%; /* Makes the image fill the width of its container */
+    height: 100%; /* Ensures the image fills the container height */
+    object-fit: cover; /* Keeps the image proportions intact while covering the container */
+    border-radius: 10px 10px 0 0; /* Rounds the top corners */
 }
 
 .feature-heading {
@@ -46,4 +53,5 @@
     margin-top: 15px;
     margin-bottom: 10px;
     text-align: center;
+    padding: 0 10px; /* Adds some padding to ensure the text isn't too close to the edges */
 }

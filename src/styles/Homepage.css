@@ -12,7 +12,8 @@
 }
 
 .home-image {
-    width: 50%; /* Full width */
+    margin-top: 20px;
+    width: 80%; /* Full width */
     height: 30%; /* Maintain aspect ratio */
     max-height: 90vh; /* Limit height to avoid overflow */
     object-fit: cover; /* Cover the entire area */
